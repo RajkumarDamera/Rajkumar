@@ -1,0 +1,102 @@
+.grid-container{
+    display: grid;
+    grid-template-areas:"header-area header-area header-area" "left-sidebar-area main-content-area right-sidebar-area"" footer-area footer-area footer-area";
+    grid-template-rows: 90px 1fr 70px;
+    grid-template-columns:200px 1fr 200px;
+    gap:5px ;
+    height: 100vh;
+}
+.siteheader{
+    grid-area: header-area;
+ grid-template-rows: auto auto;
+ color: black;
+    background-color: aquamarine;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    gap:5px ;
+}
+.left-sidebar{
+    grid-area:left-sidebar-area ;
+    color: black;
+    background-color: rgb(128, 238, 240);
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    gap:5px ;
+}
+.right-sidebar{
+    grid-area:right-sidebar-area ;
+    color: black;
+    background-color: rgb(128, 240, 238);
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    gap:5px ;
+
+}
+.main-content{
+    grid-area:main-content-area;
+    color: black;
+    background-color: lightcoral;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    gap:5px ;
+}
+.sitefooter{
+    grid-area:footer-area ;
+    color: black;
+    background-color: green;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    gap:5px ;
+}
+.hrow1{
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    justify-content: space-between;
+    background-color: lightgray;
+    padding: 10px 20px;
+    
+}
+.hrow1 img{
+    height: 10px;
+    width: 10px;
+}
+.hrow1 h1{
+    margin: 0%;
+    font-size: 24px;
+    color: darkblue;
+}
+.hrow1 input{
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid#ccc;
+    border-radius: 4px;
+}
+.hrow2{
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+.hrow2 nav{
+    justify-content: center;
+    gap: 20px;
+}
+.hrow2 nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: 0.35;
+    background-color: black;
+    transition: background-color 0.3;
+}
+.hrow2 nav a:hover{
+    background-color: greenyellow;
+    hover :pointer;
+}
